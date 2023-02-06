@@ -1,0 +1,1320 @@
+{
+	"info": {
+		"_postman_id": "6b4e79ca-685c-4e7a-ad8a-65f1785622fe",
+		"name": "SpikeTime V3 Legacy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36271"
+	},
+	"item": [
+		{
+			"name": "v2",
+			"item": [
+				{
+					"name": "customer",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Customer Get By Id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v2/customer/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"customer",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Customer Put",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Id\": -33739556,\n  \"Guid\": \"lab\",\n  \"Name\": \"tempor quis est\",\n  \"IsArchived\": false,\n  \"Address\": \"anim\",\n  \"Comment\": \"nulla ut pariatur\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v2/customer/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"customer",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Customer Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v2/customer/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"customer",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Customer Get List",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/customer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"customer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer Post",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": -33739556,\n  \"Guid\": \"lab\",\n  \"Name\": \"tempor quis est\",\n  \"IsArchived\": false,\n  \"Address\": \"anim\",\n  \"Comment\": \"nulla ut pariatur\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v2/customer",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"customer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "invoice",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Outgoing Invoice Get Invoice By Id",
+									"request": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "xapikey",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "<API Key>",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v2/invoice/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"invoice",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Outgoing Invoice Put",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Id\": 23721488,\n  \"CustomerId\": 1296555,\n  \"InvoiceNo\": \"do cillum et aliquip\",\n  \"InvoiceDate\": \"1970-07-20T11:17:06.006Z\",\n  \"AddressFrom\": \"sint minim el\",\n  \"AddressTo\": \"enim eiusmod commodo sint et\",\n  \"Title\": \"in pariatur\",\n  \"Description\": \"adipisicing\",\n  \"Notes\": \"commodo laborum minim\",\n  \"Footer\": \"cillum consectetur incididunt ipsum\",\n  \"VatRate\": 23392159,\n  \"Currency\": \"irure cupidatat\",\n  \"Positions\": [\n    {\n      \"Position\": \"esse voluptate cillum nisi\",\n      \"Quantity\": -27151101.843899995,\n      \"SingleAmount\": 7434785.84002322,\n      \"Amount\": 58720630.541049,\n      \"Unit\": \"eiusmod sint ut velit dolor\"\n    },\n    {\n      \"Position\": \"anim fugiat Duis id sit\",\n      \"Quantity\": 1019639.4651979208,\n      \"SingleAmount\": -96528715.36596318,\n      \"Amount\": 86916396.85296565,\n      \"Unit\": \"consectetu\"\n    }\n  ],\n  \"Cleared\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v2/invoice/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"invoice",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Outgoing Invoice Delete",
+									"request": {
+										"auth": {
+											"type": "apikey",
+											"apikey": [
+												{
+													"key": "key",
+													"value": "xapikey",
+													"type": "string"
+												},
+												{
+													"key": "value",
+													"value": "<API Key>",
+													"type": "string"
+												},
+												{
+													"key": "in",
+													"value": "header",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v2/invoice/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"invoice",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Outgoing Invoice Get Invoices",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/invoice?year=-24321462&month=-24321462",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"invoice"
+									],
+									"query": [
+										{
+											"key": "year",
+											"value": "-24321462"
+										},
+										{
+											"key": "month",
+											"value": "-24321462"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Outgoing Invoice Post",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"CustomerId\": 10,\n  \"Invoice\": {\n    \n    \"CustomerId\": 10,\n    \"InvoiceNo\": \"esse\",\n    \"InvoiceDate\": \"2022-10-27\",\n    \"AddressFrom\": \"aliquip sit ut Lorem\",\n    \"AddressTo\": \"aute sunt\",\n    \"Title\": \"nisi Duis\",\n    \"Description\": \"ut esse irure quis\",\n    \"Notes\": \"qui reprehenderit voluptate\",\n    \"Footer\": \"sint\",\n    \"VatRate\": 11,\n    \"Currency\": \"reprehenderit voluptate velit\",\n    \"Positions\": [\n      {\n        \"Position\": \"tempor quis\",\n        \"Quantity\": 2,\n        \"SingleAmount\": 22,\n        \"Amount\": 44,\n        \"Unit\": \"h\"\n      }\n    ],\n    \"Cleared\": true\n  },\n  \"Filter\": {\n    \"DateFrom\": \"1994-02-28T06:59:50.843Z\",\n    \"DateTo\": \"2023-07-28T21:03:55.424Z\"   \n    \n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v2/invoice",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"invoice"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Outgoing Invoice Get Invoice Pdf",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/octet-stream"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/invoice/getinvoicepdf/:invoiceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"invoice",
+										"getinvoicepdf",
+										":invoiceId"
+									],
+									"variable": [
+										{
+											"key": "invoiceId",
+											"value": "5567581",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Outgoing Invoice Get Time Sheet Pdf",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/octet-stream"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/invoice/gettimesheetpdf/:invoiceId?showEmployees=true",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"invoice",
+										"gettimesheetpdf",
+										":invoiceId"
+									],
+									"query": [
+										{
+											"key": "showEmployees",
+											"value": "true"
+										}
+									],
+									"variable": [
+										{
+											"key": "invoiceId",
+											"value": "5567583",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "project",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Project Get By Id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v2/project/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"project",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Project Put",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Id\": 15718958,\n  \"Customer_Id\": -2929333,\n  \"Name\": \"proid\",\n  \"IsArchived\": true,\n  \"IsBillable\": false,\n  \"BudgetInHours\": 7678912,\n  \"BudgetInCurrency\": 37187428.231738865,\n  \"Guid\": \"dolor aute\",\n  \"CustomerGuid\": \"commodo occaecat\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v2/project/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"project",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Project Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v2/project/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"project",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Project Get List",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/project",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"project"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Project Post",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": 15718958,\n  \"Customer_Id\": -2929333,\n  \"Name\": \"proid\",\n  \"IsArchived\": true,\n  \"IsBillable\": false,\n  \"BudgetInHours\": 7678912,\n  \"BudgetInCurrency\": 37187428.231738865,\n  \"Guid\": \"dolor aute\",\n  \"CustomerGuid\": \"commodo occaecat\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v2/project",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"project"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "rate",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Rate Get By Id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v2/rate/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"rate",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Rate Put",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Id\": -52239251,\n  \"Guid\": \"proident quis non deserunt ut\",\n  \"Project_Id\": 99155473,\n  \"ProjectGuid\": \"culpa non fugiat\",\n  \"Name\": \"est voluptate\",\n  \"IsArchived\": false,\n  \"Amount\": -30037516.38678871,\n  \"IsGlobalRate\": true\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v2/rate/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"rate",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Rate Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v2/rate/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"rate",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Rate Get List",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/rate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"rate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Rate Post",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": -52239251,\n  \"Guid\": \"proident quis non deserunt ut\",\n  \"Project_Id\": 99155473,\n  \"ProjectGuid\": \"culpa non fugiat\",\n  \"Name\": \"est voluptate\",\n  \"IsArchived\": false,\n  \"Amount\": -30037516.38678871,\n  \"IsGlobalRate\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v2/rate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"rate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "User Get By Id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v2/rate/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"rate",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "User Get List",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/user/list",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"user",
+										"list"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "stopwatch",
+					"item": [
+						{
+							"name": "Stopwatch Get",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/stopwatch",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"stopwatch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stopwatch Post",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": 30531632,\n  \"Description\": \"in\",\n  \"Project_Id\": 40810180,\n  \"Rate_Id\": -38222682,\n  \"IsBillable\": true,\n  \"EntryDate\": \"1992-11-06T09:20:40.808Z\",\n  \"Tags\": \"exercitation culpa\",\n  \"AllowedInputType\": 21200077\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v2/stopwatch",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"stopwatch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stopwatch Put",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": 30531632,\n  \"Description\": \"in\",\n  \"Project_Id\": 40810180,\n  \"Rate_Id\": -38222682,\n  \"IsBillable\": true,\n  \"EntryDate\": \"1992-11-06T09:20:40.808Z\",\n  \"Tags\": \"exercitation culpa\",\n  \"AllowedInputType\": 21200077\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v2/stopwatch",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"stopwatch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stopwatch Resume",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/stopwatch/resume/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"stopwatch",
+										"resume",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-24321462",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Stopwatch Stop",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/stopwatch/stop",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"stopwatch",
+										"stop"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "timeentry",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Time Entry Get Entry",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/v2/timeentry/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"timeentry",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Time Entry Put Entry",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Id\": -64332392,\n  \"Guid\": \"proident esse Lorem\",\n  \"EntryDate\": \"1950-07-17T02:58:01.778Z\",\n  \"DateCreated\": \"1989-01-15T20:36:02.695Z\",\n  \"DurationMinutes\": 89021621,\n  \"Description\": \"ad nisi anim\",\n  \"Cleared\": true,\n  \"DateTimeFrom\": \"1958-04-09T15:32:11.338Z\",\n  \"DateTimeTo\": \"2012-06-30T22:29:53.657Z\",\n  \"IsInputTimeFromTo\": true,\n  \"RateAmount\": -61058333.916095056,\n  \"IsBillable\": false,\n  \"ProjectId\": 94000911,\n  \"RateId\": 29064774,\n  \"UserId\": -52732492,\n  \"Tags\": \"velit aute pariatur\",\n  \"AllowedInputType\": 42713222,\n  \"RateGuid\": \"culpa laboris commodo ut\",\n  \"ProjectGuid\": \"nisi in\",\n  \"UserGuid\": \"in amet ea\",\n  \"IsDeleted\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/v2/timeentry/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"timeentry",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Time Entry Delete",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/v2/timeentry/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"v2",
+												"timeentry",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-24321462",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Time Entry Get Time Entries",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/v2/timeentry",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"timeentry"
+									],
+									"query": [
+										{
+											"key": "DateFrom",
+											"value": "1983-07-22T08:36:10.828Z",
+											"disabled": true
+										},
+										{
+											"key": "DateTo",
+											"value": "1983-07-22T08:36:10.828Z",
+											"disabled": true
+										},
+										{
+											"key": "TimeEntryIds",
+											"value": "-75586187",
+											"disabled": true
+										},
+										{
+											"key": "TimeEntryIds",
+											"value": "-46671202",
+											"disabled": true
+										},
+										{
+											"key": "UserIds",
+											"value": "-75586187",
+											"disabled": true
+										},
+										{
+											"key": "UserIds",
+											"value": "-46671202",
+											"disabled": true
+										},
+										{
+											"key": "CustomerIds",
+											"value": "-75586187",
+											"disabled": true
+										},
+										{
+											"key": "CustomerIds",
+											"value": "-46671202",
+											"disabled": true
+										},
+										{
+											"key": "ProjectIds",
+											"value": "-75586187",
+											"disabled": true
+										},
+										{
+											"key": "ProjectIds",
+											"value": "-46671202",
+											"disabled": true
+										},
+										{
+											"key": "RateIds",
+											"value": "-75586187",
+											"disabled": true
+										},
+										{
+											"key": "RateIds",
+											"value": "-46671202",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Time Entry Post Entry",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": -64332392,\n  \"Guid\": \"proident esse Lorem\",\n  \"EntryDate\": \"1950-07-17T02:58:01.778Z\",\n  \"DateCreated\": \"1989-01-15T20:36:02.695Z\",\n  \"DurationMinutes\": 89021621,\n  \"Description\": \"ad nisi anim\",\n  \"Cleared\": true,\n  \"DateTimeFrom\": \"1958-04-09T15:32:11.338Z\",\n  \"DateTimeTo\": \"2012-06-30T22:29:53.657Z\",\n  \"IsInputTimeFromTo\": true,\n  \"RateAmount\": -61058333.916095056,\n  \"IsBillable\": false,\n  \"ProjectId\": 94000911,\n  \"RateId\": 29064774,\n  \"UserId\": -52732492,\n  \"Tags\": \"velit aute pariatur\",\n  \"AllowedInputType\": 42713222,\n  \"RateGuid\": \"culpa laboris commodo ut\",\n  \"ProjectGuid\": \"nisi in\",\n  \"UserGuid\": \"in amet ea\",\n  \"IsDeleted\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/v2/timeentry",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"v2",
+										"timeentry"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{xapikey}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "xapikey",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://app.spiketime.de/api",
+			"type": "string"
+		},
+		{
+			"key": "xapikey",
+			"value": "your_api_key",
+			"type": "string"
+		}
+	]
+}
