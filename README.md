@@ -4,4 +4,4 @@ In diesem Repository finden Sie immer die aktuelle Postman-Collection für die A
 
 # Fragen/ Support
 
-Wir antworten sowohl auf GitHub Issues als auch auf direkt Anfragen unter mail@spiketime.de
+Wir antworten sowohl auf GitHub Issues als auch auf direkte Anfragen unter mail@spiketime.de
